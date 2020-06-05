@@ -1,0 +1,101 @@
+<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="styles.css"
+  </head>
+  <div class="container">
+  <body>
+    <header>
+      <h1 id="title">
+        Video Conferencing Platform Survey
+      </h1>
+      <p id="description">
+        With much of the world being stuck at home, we have had to shift many of our work and social meetings to online video conferencing applications. We are looking to see which platforms are being used the most and in what way they are being used.
+      </p>
+    </header>
+    <form id="survey-form">
+      <div>
+        <label for="name" id="name-label"  class="form-content">Name</label>
+        <input type="text" name="name" placeholder="Enter your name" id="name"  class="form-content" required>
+      </div>
+      <div>
+        <label for="email" id="email-label"  class="form-content">Email</label>
+        <input type="email" name="email" placeholder="Enter your Email" id="email"  class="form-content" required>
+      </div>
+      <div class="form-content">
+        <label for="number" id="number-label"  class="form-content">Age <span class="clue">(optional)</span></label>
+        <input type="number" name="age" placeholder="Age" id="number" min="10" max="99"  class="form-content">
+      </div>
+      <div>
+        <p>How much time each week do you spend on video calls?</p>
+        <label for="0"  class="radio-content">
+          <input type="radio" id="0" value="0" name="hours-on-video" checked>0
+        </label>
+        <label for="1-2"  class="radio-content">
+          <input type="radio" id="1-2" value="1-2" name="hours-on-video">1 - 2
+        </label>
+        <label for="3-5"  class="radio-content">
+          <input type="radio" id="3-5" value="3-5" name="hours-on-video">3 - 5
+        </label>
+        <label for="5-10"  class="radio-content">
+          <input type="radio" id="5-10" value="5-10" name="hours-on-video">5 - 10
+        </label>
+        <label for="10+"  class="radio-content">
+          <input type="radio" id="10+" value="10+" name="hours-on-video">10+
+        </label>
+      </div>
+      <div>
+        <p>What percentage of your video call time is spent on work versus other uses? <span class="clue">(Work/Other)</span></p>
+        <select name="use-distribution" id="dropdown"  class="form-content">
+          <option disabled selected value>Select estimated usage distribution</option>
+          <option value="workOnly">Work Only</option>
+          <option value="75-25">75% / 25%</option>
+          <option value="50-50">50% / 50%</option>
+          <option value="25-75">25% / 75%</option>
+          <option value="otherOnly">Other Only</option>
+          <option value="preferNo">Prefer not to say</option>
+        </select>
+      </div>
+      <div>
+        <p>Which platforms are you using for video calls? <span class="clue">(Check all that apply)</span></p>
+        <label for="zoom"  class="checkbox-content">
+          <input type="checkbox" value="zoom" id="zoom" name="video-platform">Zoom
+        </label>
+        <label for="skype"  class="checkbox-content">
+          <input type="checkbox" value="skype" id="skype" name="video-platform">Skype
+        </label>
+        <label for="teams"  class="checkbox-content">
+          <input type="checkbox" value="microsoft teams" id="teams" name="video-platform">Microsoft Teams
+        </label>
+        <label for="webex-meetings"  class="checkbox-content">
+          <input type="checkbox" value="webex meetings" id="webex-meetings" name="video-platform">Webex Meetings
+        </label>
+        <label for="go-to-meeting"  class="checkbox-content">
+          <input type="checkbox" value="gotomeeting" id="go-to-meeting" name="video-platform">GoToMeeting
+        </label>
+        <label for="google-hangouts"  class="checkbox-content">
+          <input type="checkbox" value="google hangouts" id="google-hangouts" name="video-platform">Google Hangouts
+        </label>
+        <label for="facebook"  class="checkbox-content">
+          <input type="checkbox" value="facebook messenger" id="facebook" name="video-platform">Facebook Messenger
+        </label>
+        <label for="facetime"  class="checkbox-content">
+          <input type="checkbox" value="facetime" id="facetime" name="video-platform">FaceTime
+        </label>
+        <label for="marco-polo"  class="checkbox-content">
+          <input type="checkbox" value="marco polo" id="marco-polo" name="video-platform">Marco Polo
+        </label>
+      </div>
+      <div>
+        <p>What features do you find the most important in a video conferencing application?</p>
+        <textarea name="" id="comments" cols="30" rows="10"  class="form-content" placeholder="Enter additional comments here..."></textarea>
+      </div>
+      <button id="submit" type="submit">Submit</button>
+    </form>
+  </body>
+  </div>
